@@ -7,7 +7,7 @@ mkdir --parents "${HOME}/bin"
 if [ "${TRAVIS_BRANCH}" = 'master' ]; then
     PHPUNIT_VERSION=7
 else
-    PHPUNIT_VERSION=5.7
+    PHPUNIT_VERSION=5.7.26
 fi
 wget "https://phar.phpunit.de/phpunit-${PHPUNIT_VERSION}.phar" --output-document="${HOME}/bin/phpunit"
 chmod u+x "${HOME}/bin/phpunit"
